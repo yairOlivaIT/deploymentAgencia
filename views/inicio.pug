@@ -1,0 +1,35 @@
+extends ./layout/index
+
+block slider 
+    .slider 
+        h1 Rio de Janeiro 
+        em aventura
+
+block contenido
+    main.container.mt-5 
+        h2.text-center.mb-5 Sobre Nosotros
+        .row.mb-5 
+            .col-md-6 
+                p Agencia de Viajes te propone las mejores ofertas y oportunidades para que viajes en serio sin gastar de más. Buscamos brindarte la mejor y más personalizada atención para que hagas de tus vacaciones lo único que deben ser: espectaculares Aprovechá nuestras oportunidades en vuelos baratos, promociones aéreas, hoteles, paquetes turísticos, alquiler de autos, actividades, cruceros y seguros de viaje. Llegamos a todo el planeta: Argentina, Brasil, Caribe, Estados Unidos, Europa y miles de destinos más. Empezá a disfrutar ahora de tu viaje comprando con el mejor precio y la mejor financiación en Almundo.
+            
+            .col-md-6
+                img(src="/img/inicio_nosotros.jpg", alt="nosotros", class="img-fluid")
+
+        h1.mt-5.text-center.mb-5 #{titulo}
+        include ./layout/bloque_viajes
+
+    .descuento
+        .container 
+            .row 
+                .col-md-6 
+                    .contenido
+                        h3 5% de descuento
+                        p.titulo Viaje a Canada
+                        p.fecha 20 de Marzo de 2022 - 28 de Marzo de 2022
+                        p.precio $2,500 USD
+
+    .container
+        h2.mt-5.mb-5.text-center Testimonios 
+        include ./layout/bloque_testimonios
+
+        hr.mt-5
