@@ -45,7 +45,21 @@ const guardarTestimonios = async (req , res) => {
     }
 }
 
+const eliminarTestimonio = async (req , res) => {
+    
+    const  { id } = req.params;
+
+    try {
+        await Testimonios.destroy({ where:{ id }});
+        
+        res.redirect('/testimoniales');
+
+    } catch (error) {
+        console.log(error);
+    }
+}
 
 export {
-    guardarTestimonios
+    guardarTestimonios,
+    eliminarTestimonio
 }

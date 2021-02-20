@@ -6,7 +6,7 @@ import {
     paginaTestimonios, 
     paginaDetalleViaje ,
 } from '../controllers/paginasController.js';
-import { guardarTestimonios } from '../controllers/testimoniosController.js';
+import { guardarTestimonios , eliminarTestimonio } from '../controllers/testimoniosController.js';
 
 const router = express.Router();//De esta forma estoy utilizando la misma intancia de express, estamos extendiendo o utilizando su router
 
@@ -22,5 +22,6 @@ router.get('/viajes/:slug', paginaDetalleViaje); // crear con comodin /: es tipo
 
 router.get('/testimoniales', paginaTestimonios);
 router.post('/testimoniales',guardarTestimonios);
+router.get('/testimoniales/:id',eliminarTestimonio);
 
 export default router;

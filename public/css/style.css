@@ -24,6 +24,9 @@ h3 {
     background-color: #DC135F;
     border-color: #DC135F;
     padding: .8rem 0;
+    width: 20rem;
+    display: block;
+    margin: 0 auto;
     text-transform: uppercase;
     border-radius: .8rem;
 }
@@ -163,6 +166,7 @@ i {
     width: 40px;
     height: 40px;
     display: block;
+    margin-top:-1.5rem;
     margin-bottom: 1rem;
 }
 .blockquote-footer {
@@ -172,4 +176,21 @@ i {
     margin-top: 1rem;
 }
 
+.enlace-delete{
+    display: flex;
+    flex-direction: row-reverse;
+    text-decoration: none;
+}
 
+.delete{
+    justify-content: end;
+    margin-top: -1rem;
+    color: #C70039 ;
+    text-decoration: none;
+    font-size: 0.9rem;
+}
+
+.delete:hover{
+    text-decoration: none;
+    color: red;
+}

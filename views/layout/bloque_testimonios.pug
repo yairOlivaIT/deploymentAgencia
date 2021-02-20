@@ -4,6 +4,9 @@
             .card 
                 .card-body 
                     blockquote.blockquote
+                        .enlace-delete
+                            a(href=`testimoniales/${testimonio.id}`,class="delete")
+                                | x
                     p.mb-0 
                         | #{testimonio.mensaje}
                     footer.blockquote-footer
